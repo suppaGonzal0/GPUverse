@@ -50,9 +50,9 @@ const ProductList = () => {
                     <li>CUDA Cores: {product.cuda}</li>
                 </CardBody>
 
-                <CardFooter display='flex' flexDirection='column'>
+                <CardFooter className="flex-col">
                     <hr/>
-                    <Heading align="center" mb="16px">
+                    <Heading className="text-center mb-3">
                         {product.price} BDT
                     </Heading>
                     <Button leftIcon={<FaShoppingCart/>}>
@@ -68,6 +68,7 @@ const ProductList = () => {
         <Menu>
             <MenuButton as={Button}
                         bg="white"
+                        minWidth="100px"
                         leftIcon={<FaSort/>}>
                 Sort
             </MenuButton>
@@ -95,15 +96,20 @@ const ProductList = () => {
 
     return (
         <>
-        {menu}
-        {searchBar}
-    <SimpleGrid spacing={4}
-                templateColumns='repeat(auto-fill, minmax(280px, 1fr))'>
-        {productCards}
-    </SimpleGrid>
-</>
-)
-    ;
+            <div className="flex justify-between mb-5">
+                <Heading size="lg">Products</Heading>
+                <div className="flex gap-3">
+                    {menu}
+                    {searchBar}
+                </div>
+            </div>
+            <SimpleGrid spacing={4}
+                        templateColumns='repeat(auto-fill, minmax(280px, 1fr))'>
+                {productCards}
+            </SimpleGrid>
+        </>
+    )
+        ;
 };
 
 export default ProductList;
