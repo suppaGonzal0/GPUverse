@@ -4,12 +4,11 @@
     font-family: 'Nunito', sans-serif;
 }
 
-.App{
+body{
     width: 100%;
     min-height: 100vh;
     height: auto;
     padding: 20px;
-    background-color: #E2E8F0;
 }
 
 hr{
