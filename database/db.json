@@ -2,43 +2,53 @@
   "products" : [
     {
       "id": 1,
-      "model": "RTX 3050",
+      "model": "RTX 3050 OC",
       "brand": "GIGABYTE",
       "chipset": "GeForce",
       "memory": "6GB",
-      "price": "32,800"
+      "price": "32,800",
+      "fans": "Dual",
+      "cuda": 2560
     },
     {
       "id": 2,
-      "model": "RTX 3070",
-      "brand": "PNY",
+      "model": "RTX 3070 VENTUS",
+      "brand": "MSI",
       "chipset": "GeForce",
       "memory": "8GB",
-      "price": "74,500"
+      "price": "74,500",
+      "fans": "Tripple",
+      "cuda": 5888
     },
     {
       "id": 3,
-      "model": "RTX 3070",
+      "model": "RTX 3070 EAGLE",
       "brand": "ASUS",
       "chipset": "GeForce",
       "memory": "8GB",
-      "price": "75,000"
+      "price": "75,000",
+      "fans": "Tripple",
+      "cuda": 5888
     },
     {
       "id": 4,
-      "model": "GTX 1660 Ti",
+      "model": "GTX 1660 Ti DUAL",
       "brand": "Palit",
       "chipset": "GeForce",
       "memory": "6GB",
-      "price": "42,800"
+      "price": "42,800",
+      "fans": "Dual",
+      "cuda": 1536
     },
     {
       "id": 5,
-      "model": "GTX 1660 Ti",
+      "model": "GTX 1660 Ti DUAL",
       "brand": "Palit",
       "chipset": "GeForce",
       "memory": "6GB",
-      "price": "42,800"
+      "price": "42,800",
+      "fans": "Dual",
+      "cuda": 1536
     },
     {
       "id": 6,
@@ -46,15 +56,19 @@
       "brand": "Palit",
       "chipset": "GeForce",
       "memory": "6GB",
-      "price": "42,800"
+      "price": "42,800",
+      "fans": "Single",
+      "cuda": 1536
     },
     {
       "id": 7,
-      "model": "GTX 1660 Ti",
+      "model": "GTX 1660 Ti DUAL",
       "brand": "Palit",
       "chipset": "GeForce",
       "memory": "6GB",
-      "price": "42,800"
+      "price": "42,800",
+      "fans": "Dual",
+      "cuda": 1536
     },
     {
       "id": 8,
@@ -62,7 +76,9 @@
       "brand": "Palit",
       "chipset": "GeForce",
       "memory": "6GB",
-      "price": "42,800"
+      "price": "42,800",
+      "fans": "Single",
+      "cuda": 1536
     },
     {
       "id": 9,
@@ -70,7 +86,9 @@
       "brand": "Palit",
       "chipset": "GeForce",
       "memory": "6GB",
-      "price": "42,800"
+      "price": "42,800",
+      "fans": "Single",
+      "cuda": 1536
     }
 
 
