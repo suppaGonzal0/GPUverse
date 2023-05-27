@@ -13,7 +13,6 @@ export const theme = extendTheme({
         Button: {
             baseStyle: {
                 fontWeight: 'bold',
-                colorScheme: "red"
             },
             variants: {
                 ghost: {
