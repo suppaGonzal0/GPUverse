@@ -17,7 +17,7 @@
       "chipset": "GeForce",
       "memory": "8GB",
       "price": "74,500",
-      "fans": "Tripple",
+      "fans": "Triple",
       "cuda": 5888
     },
     {
@@ -27,7 +27,7 @@
       "chipset": "GeForce",
       "memory": "8GB",
       "price": "75,000",
-      "fans": "Tripple",
+      "fans": "Triple",
       "cuda": 5888
     },
     {
@@ -90,8 +90,6 @@
       "fans": "Single",
       "cuda": 1536
     }
-
-
   ],
   "orders" : [],
   "customers" : []
