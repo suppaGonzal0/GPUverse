@@ -1,0 +1,80 @@
+{
+  "products" : [
+    {
+      "id": 1,
+      "model": "RTX 3050",
+      "brand": "GIGABYTE",
+      "chipset": "GeForce",
+      "memory": "6GB",
+      "price": "32,800"
+    },
+    {
+      "id": 2,
+      "model": "RTX 3070",
+      "brand": "PNY",
+      "chipset": "GeForce",
+      "memory": "8GB",
+      "price": "74,500"
+    },
+    {
+      "id": 3,
+      "model": "RTX 3070",
+      "brand": "ASUS",
+      "chipset": "GeForce",
+      "memory": "8GB",
+      "price": "75,000"
+    },
+    {
+      "id": 4,
+      "model": "GTX 1660 Ti",
+      "brand": "Palit",
+      "chipset": "GeForce",
+      "memory": "6GB",
+      "price": "42,800"
+    },
+    {
+      "id": 5,
+      "model": "GTX 1660 Ti",
+      "brand": "Palit",
+      "chipset": "GeForce",
+      "memory": "6GB",
+      "price": "42,800"
+    },
+    {
+      "id": 6,
+      "model": "GTX 1660 Ti",
+      "brand": "Palit",
+      "chipset": "GeForce",
+      "memory": "6GB",
+      "price": "42,800"
+    },
+    {
+      "id": 7,
+      "model": "GTX 1660 Ti",
+      "brand": "Palit",
+      "chipset": "GeForce",
+      "memory": "6GB",
+      "price": "42,800"
+    },
+    {
+      "id": 8,
+      "model": "GTX 1660 Ti",
+      "brand": "Palit",
+      "chipset": "GeForce",
+      "memory": "6GB",
+      "price": "42,800"
+    },
+    {
+      "id": 9,
+      "model": "GTX 1660 Ti",
+      "brand": "Palit",
+      "chipset": "GeForce",
+      "memory": "6GB",
+      "price": "42,800"
+    }
+
+
+  ],
+  "orders" : [],
+  "customers" : []
+}
