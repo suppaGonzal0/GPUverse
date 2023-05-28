@@ -14,26 +14,25 @@ import {
     CardFooter,
     SimpleGrid,
     Button,
-    Heading,
-    Menu,
-    MenuButton,
-    MenuList,
-    MenuItem, InputGroup, InputLeftElement, Input,
+    Heading
 } from '@chakra-ui/react'
 
-import {FaShoppingCart, FaSort, FaSearch} from 'react-icons/fa'
+import {FaShoppingCart} from 'react-icons/fa'
+import Sort from "../../components/sort/sort";
+import Search from "../../components/search/search";
 
 const ProductList = () => {
     const navigate = useNavigate();
     const [products, setProducts] = useState([]);
 
-    useEffect(() => {
-        axios.get(`${baseURL}/products`)
-            .then(res => {
-                    setProducts(res.data)
-                }
-            )
-    }, [])
+    const sort = {
+        options: [
+            {key: "Default", value: "/products"},
+            {key: "Price (Low to High)", value: "/products?_sort=price&_order=asc"},
+            {key: "Price (High to Low)", value: "/products?_sort=price&_order=desc"}
+        ],
+        title: "Sort by price",
+    }
 
     const productCards = products.map(product => {
         return (
@@ -64,34 +63,13 @@ const ProductList = () => {
         )
     })
 
-    const menu =
-        <Menu>
-            <MenuButton as={Button}
-                        bg="white"
-                        minWidth="100px"
-                        leftIcon={<FaSort/>}>
-                Sort
-            </MenuButton>
-            <MenuList>
-                <MenuItem>Default</MenuItem>
-                <MenuItem>Price (Low to High)</MenuItem>
-                <MenuItem>Price (High to Low)</MenuItem>
-            </MenuList>
-        </Menu>
-
-    const searchBar =
-        <InputGroup>
-            <InputLeftElement pointerEvents="none">
-                <FaSearch/>
-            </InputLeftElement>
-            <Input
-                minWidth="200px"
-                width="300px"
-                bg="white"
-                variant="filled"
-                type="text"
-                placeholder="Search....."/>
-        </InputGroup>
+    useEffect(() => {
+        axios.get(`${baseURL}/products`)
+            .then(res => {
+                    setProducts(res.data)
+                }
+            )
+    }, [])
 
 
     return (
@@ -99,8 +77,8 @@ const ProductList = () => {
             <div className="flex justify-between mb-5">
                 <Heading size="lg">Products</Heading>
                 <div className="flex gap-3">
-                    {menu}
-                    {searchBar}
+                    <Sort sortVal={sort} setRes={setProducts}/>
+                    <Search searchURL="/products" setRes={setProducts}/>
                 </div>
             </div>
             <SimpleGrid spacing={4}
