@@ -13,6 +13,8 @@ import ProductDetails from "./products/ProductDetails";
 import Login from "./login&reg/Login";
 import Register from "./login&reg/Register";
 import {useEffect, useState} from "react";
+import Home from "./home/Home";
+import Dashboard from "./dashboard/Dashboard";
 
 function App() {
 
@@ -33,8 +35,8 @@ function App() {
                             <Navbar className="lg:col-span-1" role={loggedIn} logout={setLoggedIn}/>
                             <div className="lg:col-span-5 col-span-6 m-5">
                                 <Routes>
-                                    <Route path="/" element={<ProductList/>}/>
-                                    <Route path="/dashboard" element={<ProductList/>}/>
+                                    <Route path="/" element={<Home/>}/>
+                                    <Route path="/dashboard" element={<Dashboard/>}/>
                                     <Route path="/orders" element={<ProductList/>}/>
                                     <Route path="/customers" element={<CustomerList/>}/>
                                     <Route path="/customer/:id" element={<CustomerDetails/>}/>

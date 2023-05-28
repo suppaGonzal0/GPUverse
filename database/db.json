@@ -35,13 +35,13 @@
     },
     {
       "id": 4,
-      "model": "GTX 1660 Ti DUAL",
-      "brand": "Palit",
-      "chipset": "GeForce",
-      "memory": "6GB",
-      "price": "42,800",
+      "model": "Radeon RX 550",
+      "brand": "AFOX",
+      "chipset": "AMD",
+      "memory": "4GB",
+      "price": "17,500",
       "fans": "Dual",
-      "cuda": 1536,
+      "cuda": 1183,
       "quantity": 0
     },
     {
@@ -57,13 +57,13 @@
     },
     {
       "id": 6,
-      "model": "GTX 1660 Ti",
-      "brand": "Palit",
-      "chipset": "GeForce",
-      "memory": "6GB",
-      "price": "42,800",
-      "fans": "Single",
-      "cuda": 1536,
+      "model": "Radeon RX 6650 XT",
+      "brand": "SAPPHIRE",
+      "chipset": "AMD",
+      "memory": "8GB",
+      "price": "54,900",
+      "fans": "Dual",
+      "cuda": 2048,
       "quantity": 0
     },
     {
@@ -79,24 +79,24 @@
     },
     {
       "id": 8,
-      "model": "GTX 1660 Ti",
-      "brand": "Palit",
-      "chipset": "GeForce",
-      "memory": "6GB",
-      "price": "42,800",
-      "fans": "Single",
-      "cuda": 1536,
+      "model": "Arc A750 Challenger D",
+      "brand": "ASRock",
+      "chipset": "Intel",
+      "memory": "8GB",
+      "price": "35,800",
+      "fans": "Dual",
+      "cuda": 1333,
       "quantity": 0
     },
     {
       "id": 9,
-      "model": "GTX 1660 Ti",
-      "brand": "Palit",
+      "model": "GTX 1660 Super",
+      "brand": "PNY",
       "chipset": "GeForce",
-      "memory": "6GB",
-      "price": "42,800",
-      "fans": "Single",
-      "cuda": 1536,
+      "memory": "8GB",
+      "price": "53,500",
+      "fans": "Dual",
+      "cuda": 2436,
       "quantity": 0
     }
   ],
@@ -155,72 +155,6 @@
       "name": "Fancie Velasquez",
       "phone": "513-548-5151",
       "email": "fvelasquez8@un.org"
-    },
-    {
-      "id": 10,
-      "name": "Harv Nolleth",
-      "phone": "132-424-5881",
-      "email": "hnolleth9@clickbank.net"
-    },
-    {
-      "id": 11,
-      "name": "Cori Ladon",
-      "phone": "227-613-6265",
-      "email": "cladona@amazon.co.uk"
-    },
-    {
-      "id": 12,
-      "name": "Isaac Hanscome",
-      "phone": "823-108-6332",
-      "email": "ihanscomeb@independent.co.uk"
-    },
-    {
-      "id": 13,
-      "name": "Karry Selby",
-      "phone": "442-205-8418",
-      "email": "kselbyc@washingtonpost.com"
-    },
-    {
-      "id": 14,
-      "name": "Jamima Wintour",
-      "phone": "490-613-6331",
-      "email": "jwintourd@dagondesign.com"
-    },
-    {
-      "id": 15,
-      "name": "Carina Wenzel",
-      "phone": "901-873-8788",
-      "email": "cwenzele@cnbc.com"
-    },
-    {
-      "id": 16,
-      "name": "Micheline Guesford",
-      "phone": "495-239-1443",
-      "email": "mguesfordf@nps.gov"
-    },
-    {
-      "id": 17,
-      "name": "Dalli Elliot",
-      "phone": "570-192-6997",
-      "email": "delliotg@purevolume.com"
-    },
-    {
-      "id": 18,
-      "name": "Nye Worden",
-      "phone": "921-139-0778",
-      "email": "nwordenh@paypal.com"
-    },
-    {
-      "id": 19,
-      "name": "Siouxie Lambin",
-      "phone": "202-475-2645",
-      "email": "slambini@elpais.com"
-    },
-    {
-      "id": 20,
-      "name": "Jacobo Hawse",
-      "phone": "246-651-5631",
-      "email": "jhawsej@reddit.com"
     }
   ],
   "cart": []
