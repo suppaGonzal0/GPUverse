@@ -8,8 +8,8 @@ import {useNavigate} from "react-router-dom";
 const Navbar = () => {
     const navigate = useNavigate()
     return (
-        <div className="me-5">
-            <Card height="95vh">
+        <div className="my-5 ms-5">
+            <Card height="95dvh">
                 <CardHeader  pb="0">
                     <BsGpuCard size={45}/>
                     <Heading size="lg">

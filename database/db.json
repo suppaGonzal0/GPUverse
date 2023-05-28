@@ -1,5 +1,5 @@
 {
-  "products" : [
+  "products": [
     {
       "id": 1,
       "model": "RTX 3050 OC",
@@ -8,7 +8,8 @@
       "memory": "6GB",
       "price": "32,800",
       "fans": "Dual",
-      "cuda": 2560
+      "cuda": 2560,
+      "quantity": 0
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "memory": "8GB",
       "price": "74,500",
       "fans": "Triple",
-      "cuda": 5888
+      "cuda": 5888,
+      "quantity": 0
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "memory": "8GB",
       "price": "75,000",
       "fans": "Triple",
-      "cuda": 5888
+      "cuda": 5888,
+      "quantity": 0
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "memory": "6GB",
       "price": "42,800",
       "fans": "Dual",
-      "cuda": 1536
+      "cuda": 1536,
+      "quantity": 0
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "memory": "6GB",
       "price": "42,800",
       "fans": "Dual",
-      "cuda": 1536
+      "cuda": 1536,
+      "quantity": 0
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "memory": "6GB",
       "price": "42,800",
       "fans": "Single",
-      "cuda": 1536
+      "cuda": 1536,
+      "quantity": 0
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "memory": "6GB",
       "price": "42,800",
       "fans": "Dual",
-      "cuda": 1536
+      "cuda": 1536,
+      "quantity": 0
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "memory": "6GB",
       "price": "42,800",
       "fans": "Single",
-      "cuda": 1536
+      "cuda": 1536,
+      "quantity": 0
     },
     {
       "id": 9,
@@ -88,30 +96,132 @@
       "memory": "6GB",
       "price": "42,800",
       "fans": "Single",
-      "cuda": 1536
+      "cuda": 1536,
+      "quantity": 0
     }
   ],
-  "orders" : [],
-  "customers" : [
-    {"id":1,"name":"Beatrix Berntssen","phone":"284-745-3602","email":"bberntssen0@parallels.com"},
-    {"id":2,"name":"Riley Paridge","phone":"141-429-9687","email":"rparidge1@miibeian.gov.cn"},
-    {"id":3,"name":"Herculie Ullyott","phone":"595-178-0580","email":"hullyott2@theguardian.com"},
-    {"id":4,"name":"Tybi Renyard","phone":"909-672-8684","email":"trenyard3@typepad.com"},
-    {"id":5,"name":"Mill Wills","phone":"941-356-4727","email":"mwills4@pinterest.com"},
-    {"id":6,"name":"Euell Billinge","phone":"664-277-6009","email":"ebillinge5@privacy.gov.au"},
-    {"id":7,"name":"Damaris Drinkale","phone":"475-120-9342","email":"ddrinkale6@businessweek.com"},
-    {"id":8,"name":"Sax Takos","phone":"246-857-2609","email":"stakos7@marketwatch.com"},
-    {"id":9,"name":"Fancie Velasquez","phone":"513-548-5151","email":"fvelasquez8@un.org"},
-    {"id":10,"name":"Harv Nolleth","phone":"132-424-5881","email":"hnolleth9@clickbank.net"},
-    {"id":11,"name":"Cori Ladon","phone":"227-613-6265","email":"cladona@amazon.co.uk"},
-    {"id":12,"name":"Isaac Hanscome","phone":"823-108-6332","email":"ihanscomeb@independent.co.uk"},
-    {"id":13,"name":"Karry Selby","phone":"442-205-8418","email":"kselbyc@washingtonpost.com"},
-    {"id":14,"name":"Jamima Wintour","phone":"490-613-6331","email":"jwintourd@dagondesign.com"},
-    {"id":15,"name":"Carina Wenzel","phone":"901-873-8788","email":"cwenzele@cnbc.com"},
-    {"id":16,"name":"Micheline Guesford","phone":"495-239-1443","email":"mguesfordf@nps.gov"},
-    {"id":17,"name":"Dalli Elliot","phone":"570-192-6997","email":"delliotg@purevolume.com"},
-    {"id":18,"name":"Nye Worden","phone":"921-139-0778","email":"nwordenh@paypal.com"},
-    {"id":19,"name":"Siouxie Lambin","phone":"202-475-2645","email":"slambini@elpais.com"},
-    {"id":20,"name":"Jacobo Hawse","phone":"246-651-5631","email":"jhawsej@reddit.com"}
-  ]
+  "orders": [],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Beatrix Berntssen",
+      "phone": "284-745-3602",
+      "email": "bberntssen0@parallels.com"
+    },
+    {
+      "id": 2,
+      "name": "Riley Paridge",
+      "phone": "141-429-9687",
+      "email": "rparidge1@miibeian.gov.cn"
+    },
+    {
+      "id": 3,
+      "name": "Herculie Ullyott",
+      "phone": "595-178-0580",
+      "email": "hullyott2@theguardian.com"
+    },
+    {
+      "id": 4,
+      "name": "Tybi Renyard",
+      "phone": "909-672-8684",
+      "email": "trenyard3@typepad.com"
+    },
+    {
+      "id": 5,
+      "name": "Mill Wills",
+      "phone": "941-356-4727",
+      "email": "mwills4@pinterest.com"
+    },
+    {
+      "id": 6,
+      "name": "Euell Billinge",
+      "phone": "664-277-6009",
+      "email": "ebillinge5@privacy.gov.au"
+    },
+    {
+      "id": 7,
+      "name": "Damaris Drinkale",
+      "phone": "475-120-9342",
+      "email": "ddrinkale6@businessweek.com"
+    },
+    {
+      "id": 8,
+      "name": "Sax Takos",
+      "phone": "246-857-2609",
+      "email": "stakos7@marketwatch.com"
+    },
+    {
+      "id": 9,
+      "name": "Fancie Velasquez",
+      "phone": "513-548-5151",
+      "email": "fvelasquez8@un.org"
+    },
+    {
+      "id": 10,
+      "name": "Harv Nolleth",
+      "phone": "132-424-5881",
+      "email": "hnolleth9@clickbank.net"
+    },
+    {
+      "id": 11,
+      "name": "Cori Ladon",
+      "phone": "227-613-6265",
+      "email": "cladona@amazon.co.uk"
+    },
+    {
+      "id": 12,
+      "name": "Isaac Hanscome",
+      "phone": "823-108-6332",
+      "email": "ihanscomeb@independent.co.uk"
+    },
+    {
+      "id": 13,
+      "name": "Karry Selby",
+      "phone": "442-205-8418",
+      "email": "kselbyc@washingtonpost.com"
+    },
+    {
+      "id": 14,
+      "name": "Jamima Wintour",
+      "phone": "490-613-6331",
+      "email": "jwintourd@dagondesign.com"
+    },
+    {
+      "id": 15,
+      "name": "Carina Wenzel",
+      "phone": "901-873-8788",
+      "email": "cwenzele@cnbc.com"
+    },
+    {
+      "id": 16,
+      "name": "Micheline Guesford",
+      "phone": "495-239-1443",
+      "email": "mguesfordf@nps.gov"
+    },
+    {
+      "id": 17,
+      "name": "Dalli Elliot",
+      "phone": "570-192-6997",
+      "email": "delliotg@purevolume.com"
+    },
+    {
+      "id": 18,
+      "name": "Nye Worden",
+      "phone": "921-139-0778",
+      "email": "nwordenh@paypal.com"
+    },
+    {
+      "id": 19,
+      "name": "Siouxie Lambin",
+      "phone": "202-475-2645",
+      "email": "slambini@elpais.com"
+    },
+    {
+      "id": 20,
+      "name": "Jacobo Hawse",
+      "phone": "246-651-5631",
+      "email": "jhawsej@reddit.com"
+    }
+  ],
+  "cart": []
 }

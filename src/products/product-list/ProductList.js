@@ -2,7 +2,7 @@ import {baseURL} from "../../environments/Environment";
 
 import './ProductList.css';
 
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import {useNavigate} from "react-router-dom";
 
 import axios from "axios";
@@ -14,16 +14,21 @@ import {
     CardFooter,
     SimpleGrid,
     Button,
-    Heading
+    Heading,
+    useDisclosure
 } from '@chakra-ui/react'
 
 import {FaShoppingCart} from 'react-icons/fa'
 import Sort from "../../components/sort/sort";
 import Search from "../../components/search/search";
+import Cart from "../../components/cart/Cart";
 
 const ProductList = () => {
     const navigate = useNavigate();
     const [products, setProducts] = useState([]);
+    const [cartItems, setCartItems] = useState([]);
+    const {isOpen, onOpen, onClose} = useDisclosure()
+    const btnRef = useRef()
 
     const sort = {
         options: [
@@ -54,7 +59,9 @@ const ProductList = () => {
                     <Heading className="text-center mb-3">
                         {product.price} BDT
                     </Heading>
-                    <Button leftIcon={<FaShoppingCart/>}>
+                    <Button
+                        onClick={() => addToCart({product})}
+                        leftIcon={<FaShoppingCart/>}>
                         Add to cart
                     </Button>
                 </CardFooter>
@@ -71,6 +78,25 @@ const ProductList = () => {
             )
     }, [])
 
+    const addToCart = (item) => {
+        const currQty = cartItems.filter(c => c.id === item.product.id).length
+        if ((currQty > 0)) {
+            console.log(item.product.quantity)
+            axios.put(`${baseURL}/cart/${item.product.id}`,
+                {...item.product, quantity: currQty+1})
+                .then(res => {
+                        console.log(res)
+                    }
+                )
+        } else {
+            axios.post(`${baseURL}/cart`, {...item.product, quantity: 1})
+                .then(res => {
+                        console.log(res)
+                    }
+                )
+        }
+    }
+
 
     return (
         <>
@@ -85,6 +111,20 @@ const ProductList = () => {
                         templateColumns='repeat(auto-fill, minmax(280px, 1fr))'>
                 {productCards}
             </SimpleGrid>
+
+            <div className="text-center mt-8">
+                <Button p="25px" className="gap-2" bg="#1A202C" color="white"
+                        minWidth="300px" variant="outlined" ref={btnRef} onClick={onOpen}>
+                    <FaShoppingCart/> View Cart
+                </Button>
+            </div>
+
+            <Cart
+                cartItems={cartItems}
+                setCartItems={setCartItems}
+                isOpen={isOpen}
+                onClose={onClose}
+                btnRef={btnRef}/>
         </>
     )
         ;

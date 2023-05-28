@@ -18,7 +18,7 @@ function App() {
                 <BrowserRouter>
                     <div className="grid grid-cols-6">
                         <Navbar className="lg:col-span-1"/>
-                        <div className="lg:col-span-5 col-span-6">
+                        <div className="lg:col-span-5 col-span-6 m-5">
                             <Routes>
                                 <Route path="/" element={<ProductList/>}/>
                                 <Route path="/dashboard" element={<ProductList/>}/>
