@@ -7,6 +7,7 @@ import {theme} from "./chakraUI/Theme";
 
 import ProductList from "./products/product-list/ProductList";
 import Navbar from "./components/navbar/Navbar";
+import CustomerList from "./customers/customer-list/CustomerList";
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
                                 <Route path="/dashboard" element={<ProductList/>}/>
                                 <Route path="/products" element={<ProductList/>}/>
                                 <Route path="/orders" element={<ProductList/>}/>
-                                <Route path="/customers" element={<ProductList/>}/>
+                                <Route path="/customers" element={<CustomerList/>}/>
                                 <Route path= "*" element={<ProductList/>}/>
                             </Routes>
                         </div>
