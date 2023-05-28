@@ -10,10 +10,10 @@ import {
 import {useNavigate} from "react-router-dom";
 import {useEffect, useState} from "react";
 import axios from "axios";
-import {baseURL} from "../../environments/Environment";
+import {baseURL} from "../environments/Environment";
 import {FiEye} from "react-icons/fi"
-import Sort from "../../components/sort/sort";
-import Search from "../../components/search/search";
+import Sort from "../components/sort/sort";
+import Search from "../components/search/search";
 const CustomerList = () => {
     const navigate = useNavigate();
     const [customers, setCustomers] = useState([]);
@@ -35,7 +35,7 @@ const CustomerList = () => {
                 <Td>{customer.phone}</Td>
                 <Td>{customer.email}</Td>
                 <Td>
-                    <Button onClick={() => navigate(`/customers/${customer.id}`)}>
+                    <Button onClick={() => navigate(`/customer/${customer.id}`)}>
                         <FiEye size={20}/>
                     </Button>
                 </Td>
