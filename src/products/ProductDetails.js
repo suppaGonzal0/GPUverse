@@ -19,7 +19,7 @@ const ProductDetails = () => {
     }, [id])
 
     return (
-        <div className="customerProfileBG flex items-center justify-center">
+        <div className="patternBG flex items-center justify-center">
             <Card width="800px" p="10">
                 <div className="flex justify-around">
                     <div>
