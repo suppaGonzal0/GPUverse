@@ -14,7 +14,6 @@ const CustomerDetails = () => {
         axios.get(`${baseURL}/customers/${id}`)
             .then(res => {
                     setCustomer(res.data)
-                    console.log(res.data)
                 }
             )
     }, [id])

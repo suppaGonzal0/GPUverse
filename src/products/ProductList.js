@@ -41,7 +41,7 @@ const ProductList = () => {
             <Card key={product.id}>
 
                 <CardHeader cursor="pointer"
-                            onClick={() => navigate(`/products/${product.id}`)}>
+                            onClick={() => navigate(`/product/${product.id}`)}>
                     <Heading>{product.brand} {product.chipset} {product.model}</Heading>
                 </CardHeader>
 

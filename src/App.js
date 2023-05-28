@@ -9,6 +9,7 @@ import ProductList from "./products/ProductList";
 import Navbar from "./components/Navbar";
 import CustomerList from "./customers/CustomerList";
 import CustomerDetails from "./customers/CustomerDetails";
+import ProductDetails from "./products/ProductDetails";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
                                 <Route path="/" element={<ProductList/>}/>
                                 <Route path="/dashboard" element={<ProductList/>}/>
                                 <Route path="/products" element={<ProductList/>}/>
+                                <Route path="/product/:id" element={<ProductDetails/>}/>
                                 <Route path="/orders" element={<ProductList/>}/>
                                 <Route path="/customers" element={<CustomerList/>}/>
                                 <Route path="/customer/:id" element={<CustomerDetails/>}/>
