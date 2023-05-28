@@ -5,68 +5,74 @@ import {FaHome, FaShoppingCart, FaListAlt} from "react-icons/fa"
 import {MdSpaceDashboard, MdLogout} from "react-icons/md"
 import {useNavigate} from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({role, logout}) => {
     const navigate = useNavigate()
-    return (
-        <div className="my-5 ms-5">
-            <Card height="95dvh">
-                <CardHeader  pb="0">
-                    <BsGpuCard size={45}/>
-                    <Heading size="lg">
-                        GPUverse
-                    </Heading>
-                    <hr/>
-                </CardHeader>
+    return (<div className="my-5 ms-5">
+        <Card height="95dvh">
+            <CardHeader pb="0">
+                <BsGpuCard size={45}/>
+                <Heading size="lg">
+                    GPUverse
+                </Heading>
+                <hr/>
+            </CardHeader>
 
-                <CardBody  pt="0">
+            <CardBody pt="0">
 
+                <Button
+                    leftIcon={<FaHome/>}
+                    variant='ghost'
+                    onClick={() => navigate('/')}>
+                    Home
+                </Button>
+
+                {role === "admin" && <Button
+                    leftIcon={<MdSpaceDashboard/>}
+                    variant='ghost'
+                    onClick={() => navigate('/dashboard')}>
+                    Dashboard
+                </Button>}
+
+                <Button
+                    leftIcon={<FaShoppingCart/>}
+                    variant='ghost'
+                    onClick={() => navigate('/products')}>
+                    Products
+                </Button>
+
+                {role === "admin"
+                    &&
                     <Button
-                        leftIcon={<FaHome />}
-                        variant='ghost'
-                        onClick={() => navigate('/')}>
-                        Home
-                    </Button>
-
-                    <Button
-                        leftIcon={<MdSpaceDashboard />}
-                        variant='ghost'
-                        onClick={() => navigate('/dashboard')}>
-                        Dashboard
-                    </Button>
-
-                    <Button
-                        leftIcon={<FaShoppingCart />}
-                        variant='ghost'
-                        onClick={() => navigate('/products')}>
-                        Products
-                    </Button>
-
-                    <Button
-                        leftIcon={<FaListAlt />}
+                        leftIcon={<FaListAlt/>}
                         variant='ghost'
                         onClick={() => navigate('/orders')}>
                         Orders
-                    </Button>
+                    </Button>}
 
+                {role === "admin"
+                    &&
                     <Button
-                        leftIcon={<BsFillPersonFill />}
+                        leftIcon={<BsFillPersonFill/>}
                         variant='ghost'
                         onClick={() => navigate('/customers')}>
                         Customers
-                    </Button>
-                </CardBody>
+                    </Button>}
+            </CardBody>
 
-                <CardFooter>
-                    <Button
-                        leftIcon={<MdLogout/>}
-                        variant='ghost'>
-                        Logout
-                    </Button>
-                </CardFooter>
+            <CardFooter>
+                <Button
+                    leftIcon={<MdLogout/>}
+                    onClick={() => {
+                        localStorage.clear()
+                        logout(null)
+                    }}
+                    variant='ghost'>
+                    Logout
+                </Button>
+            </CardFooter>
 
-            </Card>
-        </div>
-    );
+        </Card>
+    </div>);
 };
 
 export default Navbar;
