@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 
 import axios from "axios";
-import {baseURL} from "../../environments/Environment";
+import {baseURL} from "../environments/Environment";
 
 const Cart = ({btnRef, onClose, isOpen, cartItems, setCartItems}) => {
 

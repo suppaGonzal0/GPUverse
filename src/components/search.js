@@ -2,7 +2,7 @@ import React from 'react';
 import {Input, InputGroup, InputLeftElement} from "@chakra-ui/react";
 import {FaSearch} from "react-icons/fa";
 import axios from "axios";
-import {baseURL} from "../../environments/Environment";
+import {baseURL} from "../environments/Environment";
 
 const Search = ({searchURL, setRes}) => {
 

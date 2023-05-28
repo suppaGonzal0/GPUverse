@@ -1,7 +1,4 @@
-import {baseURL} from "../../environments/Environment";
-
-import './ProductList.css';
-
+import {baseURL} from "../environments/Environment";
 import {useEffect, useRef, useState} from "react";
 import {useNavigate} from "react-router-dom";
 
@@ -19,9 +16,9 @@ import {
 } from '@chakra-ui/react'
 
 import {FaShoppingCart} from 'react-icons/fa'
-import Sort from "../../components/sort/sort";
-import Search from "../../components/search/search";
-import Cart from "../../components/cart/Cart";
+import Sort from "../components/sort";
+import Search from "../components/search";
+import Cart from "../components/Cart";
 
 const ProductList = () => {
     const navigate = useNavigate();
