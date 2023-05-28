@@ -1,7 +1,7 @@
 import {Button, Menu, MenuButton, MenuItem, MenuList, Select} from "@chakra-ui/react";
 import {FaSort} from "react-icons/fa";
 import axios from "axios";
-import {baseURL} from "../../environments/Environment";
+import {baseURL} from "../environments/Environment";
 
 const Sort = ({sortVal, setRes}) => {
 

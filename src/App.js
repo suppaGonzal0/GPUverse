@@ -5,8 +5,8 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import {ChakraProvider} from '@chakra-ui/react'
 import {theme} from "./chakraUI/Theme";
 
-import ProductList from "./products/product-list/ProductList";
-import Navbar from "./components/navbar/Navbar";
+import ProductList from "./products/ProductList";
+import Navbar from "./components/Navbar";
 import CustomerList from "./customers/CustomerList";
 import CustomerDetails from "./customers/CustomerDetails";
 

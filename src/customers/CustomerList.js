@@ -12,8 +12,8 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import {baseURL} from "../environments/Environment";
 import {FiEye} from "react-icons/fi"
-import Sort from "../components/sort/sort";
-import Search from "../components/search/search";
+import Sort from "../components/sort";
+import Search from "../components/search";
 const CustomerList = () => {
     const navigate = useNavigate();
     const [customers, setCustomers] = useState([]);
